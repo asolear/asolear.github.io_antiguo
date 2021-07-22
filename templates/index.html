@@ -31,13 +31,8 @@
     <!--Main Navigation-->
     <header>
         {{ Navbar(datos) }}
-        {% for seccion, items in datos | groupby('seccion') %}
-        {% if seccion=='importante' %} 
 
-        {{ Carousel(items) }}
-        {% endif %}
-
-        {% endfor %}
+        {{ Carousel(datos) }}
 
 
     </header>

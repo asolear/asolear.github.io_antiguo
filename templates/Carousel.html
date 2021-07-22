@@ -32,7 +32,7 @@
         <ol class="carousel-indicators">
             {% for v in datos %}
             {# cuidado que n=[0...slides-1] #}
-            <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{v.o}}" class="{{v.o}}"></li>
+            <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{v.o}}" class="{{v.activo}}"></li>
             {% endfor %}
         </ol>
 
@@ -40,7 +40,7 @@
         <div class="carousel-inner">
             {% for v in datos %}
             <!-- Single item -->
-            <div class="carousel-item {{v.o}}" style="
+            <div class="carousel-item {{v.activo}}" style="
         background-image: url('{{v.img1}}');
         background-repeat: no-repeat;
         background-size: cover;

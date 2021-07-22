@@ -17,6 +17,9 @@ def main():
     for i in datos:
         o = o + 1
         i["o"] = str(o)
+        if o==1:
+            i['activo']='active'
+
 
     o = -1
     for i in datos:
