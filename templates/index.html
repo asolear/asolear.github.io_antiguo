@@ -1,0 +1,50 @@
+{# hay que definir todas las plantillas usando los parametros datos y pasarlas a macros #}
+
+{% macro Navbar(datos) %} {% include 'Navbar.html' %}{% endmacro %}
+{% macro Carousel(datos) %} {% include 'Carousel.html' %}{% endmacro %}
+{% macro Cards(datos) %} {% include 'Cards.html' %}{% endmacro %}
+{% macro CardsXL(datos) %} {% include 'CardsXL.html' %}{% endmacro %}
+{% macro Featurette(datos) %} {% include 'Featurette.html' %}{% endmacro %}
+{% macro Marketing(datos) %} {% include 'Marketing.html' %}{% endmacro %}
+{% macro Modal(datos) %} {% include 'Modal.html' %}{% endmacro %}
+
+
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>INFRAESTRUCTURA PARA LA RECARGA DE VEHICULOS ELECTRICOS</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/mdb.min.css')}}" />
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='css/mdb.dark.min.css')}}" /> -->
+    <!-- Custom styles -->
+</head>
+
+
+<body>
+    <!--Main Navigation-->
+    <header>
+        {{ Navbar(menu) }}
+        {{ Carousel(menu) }}
+    </header>
+    <main class="mt-5">
+        <div class="container">
+
+
+            {% for seccion, items in datos | groupby('seccion') %}
+            <h1>{{ seccion }}</h1>
+            {{ Cards(items) }} {{ Modal(items) }}
+
+            {% endfor %}
+
+
+            <hr class="my-5" />
+            {%include 'cookie.html' %}
+        </div>
+    </main>

@@ -1,0 +1,47 @@
+<section>
+
+
+    <!--Footer-->
+
+    <footer class=" text-white bg-dark mb-5">
+        <!-- Grid container -->
+
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>
+                        {{pag.descripcion}}
+                    </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Enlaces de interes</h5>
+
+                    <ul class="list-unstyled">
+
+                        {% for v in datos %}
+                        <li>
+                            <a href="#!" class="text-white">Link 1</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); color: rgba(255, 255, 255, 0.6);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/"> </a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</section>

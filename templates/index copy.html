@@ -1,0 +1,71 @@
+{# hay que definir todas las plantillas usando los parametros datos y pasarlas a macros #}
+
+{% macro Navbar(datos) %} {% include 'Navbar.html' %}{% endmacro %}
+{% macro Carousel(datos) %} {% include 'Carousel.html' %}{% endmacro %}
+{% macro Cards(datos) %} {% include 'Cards.html' %}{% endmacro %}
+{% macro CardsXL(datos) %} {% include 'CardsXL.html' %}{% endmacro %}
+{% macro Carousel(datos) %} {% include 'Carousel.html' %}{% endmacro %}
+{% macro Featurette(datos) %} {% include 'Featurette.html' %}{% endmacro %}
+{% macro Marketing(datos) %} {% include 'Marketing.html' %}{% endmacro %}
+{% macro Modal(datos) %} {% include 'Modal.html' %}{% endmacro %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>INFRAESTRUCTURA PARA LA RECARGA DE VEHICULOS ELECTRICOS</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/mdb.min.css')}}" />
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='css/mdb.dark.min.css')}}" /> -->
+    <!-- Custom styles -->
+</head>
+
+
+<body>
+    <!--Main Navigation-->
+    <header>
+        {{ Navbar(menu) }}
+        {{ Carousel(menu) }}
+    </header>
+    <main class="mt-5">
+        <div class="container">
+
+            <h1 style="text-align:center;color:blue;" id="{{menu_headline[0]}}">{{menu_headline[0]}}</h1>
+            {{ Cards(ddmovesiii) }} {{ Modal(ddmovesiii) }}
+            <h1 style="text-align:center;color:blue;" id="{{menu_headline[1]}}">{{menu_headline[1]}}</h1>
+            {{ CardsXL(ddindividual) }} {{ Modal(ddindividual) }}
+            <h1 style="text-align:center;color:blue;" id="{{menu_headline[1]}}">{{menu_headline[1]}}</h1>
+            {{ Marketing(ddcontrol) }} {{ Modal(ddcontrol) }}
+            <h1 style="text-align:center;color:blue;" id="{{menu_headline[2]}}">{{menu_headline[2]}}</h1>
+            {{ CardsXL(ddindividual) }} {{ Modal(ddindividual) }}
+            <h1 style="text-align:center;color:blue;" id="{{menu_headline[3]}}">{{menu_headline[3]}}</h1>
+            {{ CardsXL(ddindividual) }} {{ Modal(ddindividual) }}
+            <h1 style="text-align:center;color:blue;" id="{{menu_headline[3]}}">{{menu_headline[3]}}</h1>
+            {{ Marketing(ddmarketing) }} {{ Modal(ddmarketing) }}
+
+            <hr class="my-5" />
+            {% include 'Marketing.html' %}
+            {%include 'Footer.html' %}
+            {%include 'cookie.html' %}
+        </div>
+    </main>
+
+
+
+
+
+    <script type="text/javascript" src="{{url_for('static', filename='js/mdb.min.js')}}"></script>
+    <!-- Custom scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+
+</html>
