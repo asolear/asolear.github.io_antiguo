@@ -40,7 +40,10 @@
         <div class="container">
 
 
-            {% for seccion, items in datos | groupby('seccion') %}
+            {% for seccion, items in datos | groupby('seccion') | sort(attribute='orden')  %}
+
+            {{n}}
+
             <h1 id="{{seccion}}">{{ seccion }}</h1>
 
             {% if seccion=='importante' %} {{ Cards(items) }} {{ Modal(items) }}
