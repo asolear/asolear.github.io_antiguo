@@ -25,7 +25,7 @@ def main():
 
     web = {
         "nombre": "el nombre de la web",
-        "": "",
+        "menu": "RECARGA VE",
         "": "",
         "": "",
     }
