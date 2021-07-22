@@ -14,8 +14,14 @@ app = Flask(__name__)
 def main():
     datos = read_csv_file('datos.csv')
 
+    o = -1
+    for i in datos:
+        o = o + 1
+        i["n"] = "n_" + str(o)
+
+    print(datos)
+
     return render_template('index.html',
-        title     = "Planets",
         datos   = datos,
     )
 
@@ -35,3 +41,4 @@ if __name__ == "__main__":
         cli(app, base_url="https://ivehiculoelectrico.com")
     else:
         app.run(debug=True, host="0.0.0.0", port=5500)
+

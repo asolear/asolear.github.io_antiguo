@@ -40,7 +40,6 @@
             {% for seccion, items in datos | groupby('seccion') %}
             <h1>{{ seccion }}</h1>
             {{ Cards(items) }} {{ Modal(items) }}
-
             {% endfor %}
 
 
@@ -48,3 +47,11 @@
             {%include 'cookie.html' %}
         </div>
     </main>
+
+    <script type="text/javascript" src="{{url_for('static', filename='js/mdb.min.js')}}"></script>
+    <!-- Custom scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+
+</html>
