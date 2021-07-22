@@ -50,6 +50,6 @@ if __name__ == "__main__":
     import sys
 
     if len(sys.argv) > 1:
-        cli(app, base_url="https://ivehiculoelectrico.com")
+        cli(app, base_url="https://asolear.com")
     else:
         app.run(debug=True, host="0.0.0.0", port=5500)
