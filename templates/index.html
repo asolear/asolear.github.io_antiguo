@@ -6,6 +6,7 @@
 {% macro CardsXL(datos) %} {% include 'CardsXL.html' %}{% endmacro %}
 {% macro Featurette(datos) %} {% include 'Featurette.html' %}{% endmacro %}
 {% macro Marketing(datos) %} {% include 'Marketing.html' %}{% endmacro %}
+{% macro Contact(datos) %} {% include 'Contact.html' %}{% endmacro %}
 {% macro Modal(datos) %} {% include 'Modal.html' %}{% endmacro %}
 
 
@@ -48,11 +49,11 @@
 
             {% if seccion=='importante' %} {{ Cards(items) }} {{ Modal(items) }}
             <!--   -->
-            {% elif seccion=='colectivo' %} {{ CardsXL(items) }} {{ Modal(items) }}
-            {% elif seccion=='control' %} {{ Cards(items) }} {{ Modal(items) }}
-            {% elif seccion=='individual' %} {{ Featurette(items) }} {{ Modal(items) }}
-            {% elif seccion=='marketing' %} {{ Marketing(items) }} {{ Modal(items) }}
-            {% elif seccion=='colectivo' %} {{ Cards(items) }} {{ Modal(items) }}
+            {% elif seccion=='Colectivo' %} {{ CardsXL(items) }} {{ Modal(items) }}
+            {% elif seccion=='Smart' %} {{ Cards(items) }} {{ Modal(items) }}
+            {% elif seccion=='Individual' %} {{ Featurette(items) }} {{ Modal(items) }}
+            {% elif seccion=='Servicios' %} {{ Marketing(items) }} {{ Modal(items) }}
+            {% elif seccion=='contacto' %} {{ CardsXL(items) }} {{ Modal(items) }}
             <!--  -->
             {% else %} {{ Cards(items) }} {{ Modal(items) }}
             {% endif %}
