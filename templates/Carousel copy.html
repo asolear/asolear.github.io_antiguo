@@ -16,7 +16,7 @@
     }
 
     .navbar .nav-link {
-        color: #000 !important;
+        color: #fff !important;
     }
 </style>
 
@@ -32,7 +32,7 @@
         <ol class="carousel-indicators">
             {% for v in datos %}
             {# cuidado que n=[0...slides-1] #}
-            <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{v.o}}" class="{{v.o}}"></li>
+            <li data-mdb-target="#introCarousel" data-mdb-slide-to="{{v.o}}" class="{{v.especifico}}"></li>
             {% endfor %}
         </ol>
 
@@ -40,8 +40,8 @@
         <div class="carousel-inner">
             {% for v in datos %}
             <!-- Single item -->
-            <div class="carousel-item {{v.o}}" style="
-        background-image: url('{{v.img1}}');
+            <div class="carousel-item {{v.especifico}}" style="
+        background-image: url('static/img/{{v.img1}}');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -55,7 +55,7 @@
                                 onclick="document.getElementById('boton_modal_CONTACTO').click();" role="button"
                                 rel="nofollow" target="_blank">CONTACTO</a>
                             <a class="btn btn-outline-light btn-lg m-2" target="_blank" role="button"
-                                href="#{{v.headline}}">Saber
+                            href="#{{v.headline}}" >Saber
                                 mas</a>
 
                         </div>

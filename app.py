@@ -13,6 +13,10 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     datos = read_csv_file('datos.csv')
+    o = -1
+    for i in datos:
+        o = o + 1
+        i["o"] = str(o)
 
     o = -1
     for i in datos:

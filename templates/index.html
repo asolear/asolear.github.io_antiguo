@@ -31,7 +31,15 @@
     <!--Main Navigation-->
     <header>
         {{ Navbar(datos) }}
-        {{ Carousel(menu) }}
+        {% for seccion, items in datos | groupby('seccion') %}
+        {% if seccion=='importante' %} 
+
+        {{ Carousel(items) }}
+        {% endif %}
+
+        {% endfor %}
+
+
     </header>
     <main class="mt-5">
         <div class="container">
@@ -56,7 +64,8 @@
 
             <hr class="my-5" />
             {%include 'Footer.html' %}
-            {%include 'cookie.html' %}        </div>
+            {%include 'cookie.html' %}
+        </div>
     </main>
 
     <script type="text/javascript" src="{{url_for('static', filename='js/mdb.min.js')}}"></script>

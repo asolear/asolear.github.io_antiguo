@@ -1,6 +1,0 @@
-{% for seccion, items in datos | groupby('seccion') %}
-<h1>{{ seccion }}</h1>
-{% for item in items %}
-<p>{{ item.headline1 }} </p>
-{% endfor %}
-{% endfor %}
