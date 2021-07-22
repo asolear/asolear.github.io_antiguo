@@ -30,7 +30,7 @@
 <body>
     <!--Main Navigation-->
     <header>
-        {{ Navbar(menu) }}
+        {{ Navbar(datos) }}
         {{ Carousel(menu) }}
     </header>
     <main class="mt-5">
@@ -38,14 +38,25 @@
 
 
             {% for seccion, items in datos | groupby('seccion') %}
-            <h1>{{ seccion }}</h1>
-            {{ Cards(items) }} {{ Modal(items) }}
+            <h1 id="{{seccion}}">{{ seccion }}</h1>
+
+            {% if seccion=='importante' %} {{ Cards(items) }} {{ Modal(items) }}
+            <!--   -->
+            {% elif seccion=='colectivo' %} {{ CardsXL(items) }} {{ Modal(items) }}
+            {% elif seccion=='control' %} {{ Cards(items) }} {{ Modal(items) }}
+            {% elif seccion=='individual' %} {{ Featurette(items) }} {{ Modal(items) }}
+            {% elif seccion=='marketing' %} {{ Marketing(items) }} {{ Modal(items) }}
+            {% elif seccion=='colectivo' %} {{ Cards(items) }} {{ Modal(items) }}
+            <!--  -->
+            {% else %} {{ Cards(items) }} {{ Modal(items) }}
+            {% endif %}
+
             {% endfor %}
 
 
             <hr class="my-5" />
-            {%include 'cookie.html' %}
-        </div>
+            {%include 'Footer.html' %}
+            {%include 'cookie.html' %}        </div>
     </main>
 
     <script type="text/javascript" src="{{url_for('static', filename='js/mdb.min.js')}}"></script>
