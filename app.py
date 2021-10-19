@@ -25,7 +25,7 @@ def main():
 
     web = {
         "nombre": "el nombre de la web",
-        "menu": "RECARGA VE",
+        "menu": "   Asolear Ingenieros",
         "formulario": "https://docs.google.com/forms/d/e/1FAIpQLSeYnRLm2rGb6pj3dSzqIePjXQiiDxheanXSsru-ApivowTfsA/viewform?usp=sf_link",
         "": "",
     }
