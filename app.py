@@ -24,8 +24,8 @@ def main():
         i["n"] = "n_" + str(o)
 
     web = {
-        "nombre": "el nombre de la web",
-        "menu": "   Asolear Ingenieros",
+        "nombre": "Autoconsumo y renovables",
+        "menu": "   Asolear",
         "formulario": "https://docs.google.com/forms/d/e/1FAIpQLSeYnRLm2rGb6pj3dSzqIePjXQiiDxheanXSsru-ApivowTfsA/viewform?usp=sf_link",
         "": "",
     }

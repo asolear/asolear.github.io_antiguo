@@ -7,28 +7,26 @@
         <!-- Container wrapper -->
         <div class="container-fluid">
             <!-- Toggle button -->
-            <a class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-label="Toggle navigation" id='hamburgesa' onclick="document.getElementById('logo').click();" href="#">
-                <i class="fas fa-bars text-warning"> {{web.menu}}</i>
-        </a>
+            <a class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-label="Toggle navigation" id='hamburgesa'
+                onclick="document.getElementById('logo').click();" href="#">
+                <i class="fas fa-bars text-success"> {{web.menu}}</i>
+            </a>
 
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Navbar brand -->
                 <a id="logo" class="navbar-brand mt-2 mt-lg-0" onclick="$('.modal').modal('hide');" href="#">
-                    <i class="fas fa-charging-station text-warning fa-1x"></i>
+                    <!-- <i class="fas fa-charging-station text-success fa-1x"></i> -->
                 </a>
                 <!-- Left links -->
                 <ul class="navbar-nav  mb-2 mb-lg-0">
-                    {% for seccion, items in datos | groupby('seccion')  %}
+                    {% for seccion, items in datos | groupby('seccion') %}
 
                     <li class="nav-item {{seccion}}">
-                        <a class="nav-link" href="#{{seccion}}" 
-                        onclick="
-                        document.getElementById('hamburgesa').click()
-                            ">
-                                                        <strong class='text-warning'>{{seccion}}</strong></a>
+                        <a class="nav-link" href="#{{seccion}}" onclick="
+                        document.getElementById('hamburgesa').click()">
+                            <strong class='text-success'>{{seccion}}</strong></a>
                     </li>
                     {% endfor %}
                 </ul>
