@@ -20,7 +20,7 @@
 
       <div class="modal-body">
         <!-- <h1>{{ v.headline1 }}</h1> -->
-        <!-- <img src="{{v.img1}}" class="card-img-top" />
+        <!-- <img src="{{v.png_del_pdf}}" class="card-img-top" />
         <p>{{ v.content1 }}</p> -->
         <center>
           <a class="btn btn-success" href="#" role="button"
@@ -28,8 +28,9 @@
             Personalizar el estudio</a>
         </center>
         <object data='{{v.pdf}}' width="100%" height="1200px">
-          <a class="btn btn-success" href="{{v.pdf}}" role="button">
-            DESCARGARLO, Su navegador no soporta PDFs! </a>
+          <a class="btn btn-warning" href="{{v.pdf}}" role="button">
+            Descargar el modelo
+            <img src="{{v.png_del_pdf}}" style=" width: 100%; height: 500;" /></a>
         </object>
         <h2>Ayuda</h2>
         <iframe src="{{v.link2}}" id="frame" frameborder="0" style=" width: 100%; height: 100%;"></iframe>
