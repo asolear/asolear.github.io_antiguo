@@ -18,13 +18,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Autoconsumo y renovables</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
-    <link rel="stylesheet" href="/static/css/mdb.min.css" />
-    <!-- <link rel="stylesheet" href="/static/css/mdb.dark.min.css" /> -->
-    <!-- Custom styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
 </head>
 
 
@@ -226,7 +224,7 @@
                     <div class="d-flex justify-content-center align-items-center h-100">
                         <div class="text-white text-center">
                             <h1 class="mb-3">Comunidad Energetica</h1>
-                            <h5 class="mb-4"></h5>
+                            <h5 class="mb-4">Estudio Presupuesto</h5>
                             <a class="btn btn-outline-success btn-lg m-2"
                                 onclick="document.getElementById('boton_Modal_iframe_n_2').click();" role="button"
                                 rel="nofollow" target="_blank">CONTACTO</a>
@@ -357,7 +355,7 @@
                         <p class="mb-3">
                             hoooolz  zfz ollz
                         </p>
-                        <a href="#" class="text-primary d-flex align-items-center">Call to action
+                        <a href="#!" class="text-primary d-flex align-items-center" onclick="document.getElementById('boton_Modal_iframe_2n_2').click()">Call to action
                             <i class="mi mi-ChevronRight ms-2"></i>
                         </a>
                     </div>
@@ -379,7 +377,7 @@
                         <p class="mb-3">
                             
                         </p>
-                        <a href="#" class="text-primary d-flex align-items-center">Call to action
+                        <a href="#!" class="text-primary d-flex align-items-center" onclick="document.getElementById('boton_Modal_iframe_2n_5').click()">Call to action
                             <i class="mi mi-ChevronRight ms-2"></i>
                         </a>
                     </div>
@@ -419,13 +417,13 @@
         <!-- <h1>Comunidad Energetica</h1> -->
         <!-- <img src="static/img/fv/solar-panels-894291_1920.jpg" class="card-img-top" />
         <p>hoooolz  zfz ollz</p> -->
-
-
-        <iframe src="https://formulario-yzohicfcma-ew.a.run.app/contacto" id="frame" frameborder="0"
-          style="position:absolute; position:absolute; top:0; left:0; bottom:0; right:0; width: 100%; height: 100%;"></iframe>
-
-        <!-- <embed src="" type="application/pdf" width="100%" height="600px" /> -->
-
+        <a href="#!" class="text-primary d-flex align-items-center"
+          onclick="document.getElementById('cierramodal').click();document.getElementById('boton_Modal_iframe_2n_2').click()">Call
+          to action
+          <i class="mi mi-ChevronRight ms-2"></i>
+          jojojo
+        </a>
+        <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="1200px" />
 
       </div>
     </div>
@@ -460,12 +458,99 @@
         <!-- <h1>Comunidad Energetica</h1> -->
         <!-- <img src="static/img/fv/solar-g7163ba4f5_1920.jpg" class="card-img-top" />
         <p></p> -->
+        <a href="#!" class="text-primary d-flex align-items-center"
+          onclick="document.getElementById('cierramodal').click();document.getElementById('boton_Modal_iframe_2n_5').click()">Call
+          to action
+          <i class="mi mi-ChevronRight ms-2"></i>
+          jojojo
+        </a>
+        <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="1200px" />
 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Button trigger modal -->
+<button hidden type="button" class="btn btn-primary" data-mdb-toggle="modal"
+  data-mdb-target="#exampleModal_iframe_2n_2" id='boton_Modal_iframe_2n_2'>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_iframe_2n_2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header pt-4 pb-4" onclick="$('.modal').modal('hide');">
+        <button hidden id="cierramodal" type="button" class="btn btn-warning" data-mdb-dismiss="modal">
+          <i class="far fa-arrow-alt-circle fa-lg"></i>
+        </button>
+        <div class="fixed-action-btn">
+    <a class="btn btn-floating " onclick="document.getElementById('cierramodal').click();">
+        <i class="far fa-arrow-alt-circle-left text-danger fa-4x"></i>
+    </a>
+    <ul class="list-unstyled"><li></li>
+    </ul>
+</div>
+      </div>
+      <div class="modal-body">
+        <!-- <h1>Comunidad Energetica</h1> -->
+        <!-- <img src="static/img/fv/solar-panels-894291_1920.jpg" class="card-img-top" />
+        <p>hoooolz  zfz ollz</p> -->
+
+        <iframe src="https://formulario-yzohicfcma-ew.a.run.app/contacto" id="frame" frameborder="0"
+          style="position:absolute; position:absolute; top:0; left:0; bottom:0; right:0; width: 100%; height: 100%;"></iframe>
+
+
+
+        <!-- <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="600px" /> -->
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button hidden type="button" class="btn btn-primary" data-mdb-toggle="modal"
+  data-mdb-target="#exampleModal_iframe_2n_5" id='boton_Modal_iframe_2n_5'>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_iframe_2n_5" tabindex="-1" aria-labelledby="exampleModalLabel2"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header pt-4 pb-4" onclick="$('.modal').modal('hide');">
+        <button hidden id="cierramodal" type="button" class="btn btn-warning" data-mdb-dismiss="modal">
+          <i class="far fa-arrow-alt-circle fa-lg"></i>
+        </button>
+        <div class="fixed-action-btn">
+    <a class="btn btn-floating " onclick="document.getElementById('cierramodal').click();">
+        <i class="far fa-arrow-alt-circle-left text-danger fa-4x"></i>
+    </a>
+    <ul class="list-unstyled"><li></li>
+    </ul>
+</div>
+      </div>
+      <div class="modal-body">
+        <!-- <h1>Comunidad Energetica</h1> -->
+        <!-- <img src="static/img/fv/solar-g7163ba4f5_1920.jpg" class="card-img-top" />
+        <p></p> -->
 
         <iframe src="https://autoconsumes.github.io/" id="frame" frameborder="0"
           style="position:absolute; position:absolute; top:0; left:0; bottom:0; right:0; width: 100%; height: 100%;"></iframe>
 
-        <!-- <embed src="" type="application/pdf" width="100%" height="600px" /> -->
+
+
+        <!-- <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="600px" /> -->
 
 
       </div>
@@ -498,7 +583,7 @@
                         <p class="mb-3">
                             contenfasdfasdido1
                         </p>
-                        <a href="#" class="text-primary d-flex align-items-center">Call to action
+                        <a href="#!" class="text-primary d-flex align-items-center" onclick="document.getElementById('boton_Modal_iframe_2n_3').click()">Call to action
                             <i class="mi mi-ChevronRight ms-2"></i>
                         </a>
                     </div>
@@ -538,12 +623,57 @@
         <!-- <h1>Huerto Solar</h1> -->
         <!-- <img src="static/img/fv/energy-g73e105d57_1280.jpg" class="card-img-top" />
         <p>contenfasdfasdido1</p> -->
+        <a href="#!" class="text-primary d-flex align-items-center"
+          onclick="document.getElementById('cierramodal').click();document.getElementById('boton_Modal_iframe_2n_3').click()">Call
+          to action
+          <i class="mi mi-ChevronRight ms-2"></i>
+          jojojo
+        </a>
+        <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="1200px" />
 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Button trigger modal -->
+<button hidden type="button" class="btn btn-primary" data-mdb-toggle="modal"
+  data-mdb-target="#exampleModal_iframe_2n_3" id='boton_Modal_iframe_2n_3'>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_iframe_2n_3" tabindex="-1" aria-labelledby="exampleModalLabel2"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header pt-4 pb-4" onclick="$('.modal').modal('hide');">
+        <button hidden id="cierramodal" type="button" class="btn btn-warning" data-mdb-dismiss="modal">
+          <i class="far fa-arrow-alt-circle fa-lg"></i>
+        </button>
+        <div class="fixed-action-btn">
+    <a class="btn btn-floating " onclick="document.getElementById('cierramodal').click();">
+        <i class="far fa-arrow-alt-circle-left text-danger fa-4x"></i>
+    </a>
+    <ul class="list-unstyled"><li></li>
+    </ul>
+</div>
+      </div>
+      <div class="modal-body">
+        <!-- <h1>Huerto Solar</h1> -->
+        <!-- <img src="static/img/fv/energy-g73e105d57_1280.jpg" class="card-img-top" />
+        <p>contenfasdfasdido1</p> -->
 
         <iframe src="https://formulario-yzohicfcma-ew.a.run.app/contacto" id="frame" frameborder="0"
           style="position:absolute; position:absolute; top:0; left:0; bottom:0; right:0; width: 100%; height: 100%;"></iframe>
 
-        <!-- <embed src="" type="application/pdf" width="100%" height="600px" /> -->
+
+
+        <!-- <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="600px" /> -->
 
 
       </div>
@@ -576,7 +706,7 @@
                         <p class="mb-3">
                             hoooolz  zfz ollz
                         </p>
-                        <a href="#" class="text-primary d-flex align-items-center">Call to action
+                        <a href="#!" class="text-primary d-flex align-items-center" onclick="document.getElementById('boton_Modal_iframe_2n_1').click()">Call to action
                             <i class="mi mi-ChevronRight ms-2"></i>
                         </a>
                     </div>
@@ -616,12 +746,57 @@
         <!-- <h1>Nave Industrial</h1> -->
         <!-- <img src="static/img/fv/energy-1322816_1920.jpg" class="card-img-top" />
         <p>hoooolz  zfz ollz</p> -->
+        <a href="#!" class="text-primary d-flex align-items-center"
+          onclick="document.getElementById('cierramodal').click();document.getElementById('boton_Modal_iframe_2n_1').click()">Call
+          to action
+          <i class="mi mi-ChevronRight ms-2"></i>
+          jojojo
+        </a>
+        <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="1200px" />
 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Button trigger modal -->
+<button hidden type="button" class="btn btn-primary" data-mdb-toggle="modal"
+  data-mdb-target="#exampleModal_iframe_2n_1" id='boton_Modal_iframe_2n_1'>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_iframe_2n_1" tabindex="-1" aria-labelledby="exampleModalLabel2"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header pt-4 pb-4" onclick="$('.modal').modal('hide');">
+        <button hidden id="cierramodal" type="button" class="btn btn-warning" data-mdb-dismiss="modal">
+          <i class="far fa-arrow-alt-circle fa-lg"></i>
+        </button>
+        <div class="fixed-action-btn">
+    <a class="btn btn-floating " onclick="document.getElementById('cierramodal').click();">
+        <i class="far fa-arrow-alt-circle-left text-danger fa-4x"></i>
+    </a>
+    <ul class="list-unstyled"><li></li>
+    </ul>
+</div>
+      </div>
+      <div class="modal-body">
+        <!-- <h1>Nave Industrial</h1> -->
+        <!-- <img src="static/img/fv/energy-1322816_1920.jpg" class="card-img-top" />
+        <p>hoooolz  zfz ollz</p> -->
 
         <iframe src="https://formulario-yzohicfcma-ew.a.run.app/contacto" id="frame" frameborder="0"
           style="position:absolute; position:absolute; top:0; left:0; bottom:0; right:0; width: 100%; height: 100%;"></iframe>
 
-        <!-- <embed src="" type="application/pdf" width="100%" height="600px" /> -->
+
+
+        <!-- <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="600px" /> -->
 
 
       </div>
@@ -654,7 +829,7 @@
                         <p class="mb-3">
                             
                         </p>
-                        <a href="#" class="text-primary d-flex align-items-center">Call to action
+                        <a href="#!" class="text-primary d-flex align-items-center" onclick="document.getElementById('boton_Modal_iframe_2n_0').click()">Call to action
                             <i class="mi mi-ChevronRight ms-2"></i>
                         </a>
                     </div>
@@ -676,7 +851,7 @@
                         <p class="mb-3">
                             
                         </p>
-                        <a href="#" class="text-primary d-flex align-items-center">Call to action
+                        <a href="#!" class="text-primary d-flex align-items-center" onclick="document.getElementById('boton_Modal_iframe_2n_4').click()">Call to action
                             <i class="mi mi-ChevronRight ms-2"></i>
                         </a>
                     </div>
@@ -716,13 +891,13 @@
         <!-- <h1>Residencial</h1> -->
         <!-- <img src="static/img/fv/solar-panels-1273129_1920.jpg" class="card-img-top" />
         <p></p> -->
-
-
-        <iframe src="https://formulario-yzohicfcma-ew.a.run.app/contacto" id="frame" frameborder="0"
-          style="position:absolute; position:absolute; top:0; left:0; bottom:0; right:0; width: 100%; height: 100%;"></iframe>
-
-        <!-- <embed src="" type="application/pdf" width="100%" height="600px" /> -->
-
+        <a href="#!" class="text-primary d-flex align-items-center"
+          onclick="document.getElementById('cierramodal').click();document.getElementById('boton_Modal_iframe_2n_0').click()">Call
+          to action
+          <i class="mi mi-ChevronRight ms-2"></i>
+          jojojo
+        </a>
+        <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="1200px" />
 
       </div>
     </div>
@@ -757,12 +932,99 @@
         <!-- <h1>Residencial</h1> -->
         <!-- <img src="static/img/fv/solar-panels-g5050b05c9_1920.jpg" class="card-img-top" />
         <p></p> -->
+        <a href="#!" class="text-primary d-flex align-items-center"
+          onclick="document.getElementById('cierramodal').click();document.getElementById('boton_Modal_iframe_2n_4').click()">Call
+          to action
+          <i class="mi mi-ChevronRight ms-2"></i>
+          jojojo
+        </a>
+        <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="1200px" />
 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Button trigger modal -->
+<button hidden type="button" class="btn btn-primary" data-mdb-toggle="modal"
+  data-mdb-target="#exampleModal_iframe_2n_0" id='boton_Modal_iframe_2n_0'>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_iframe_2n_0" tabindex="-1" aria-labelledby="exampleModalLabel2"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header pt-4 pb-4" onclick="$('.modal').modal('hide');">
+        <button hidden id="cierramodal" type="button" class="btn btn-warning" data-mdb-dismiss="modal">
+          <i class="far fa-arrow-alt-circle fa-lg"></i>
+        </button>
+        <div class="fixed-action-btn">
+    <a class="btn btn-floating " onclick="document.getElementById('cierramodal').click();">
+        <i class="far fa-arrow-alt-circle-left text-danger fa-4x"></i>
+    </a>
+    <ul class="list-unstyled"><li></li>
+    </ul>
+</div>
+      </div>
+      <div class="modal-body">
+        <!-- <h1>Residencial</h1> -->
+        <!-- <img src="static/img/fv/solar-panels-1273129_1920.jpg" class="card-img-top" />
+        <p></p> -->
 
         <iframe src="https://formulario-yzohicfcma-ew.a.run.app/contacto" id="frame" frameborder="0"
           style="position:absolute; position:absolute; top:0; left:0; bottom:0; right:0; width: 100%; height: 100%;"></iframe>
 
-        <!-- <embed src="" type="application/pdf" width="100%" height="600px" /> -->
+
+
+        <!-- <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="600px" /> -->
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button hidden type="button" class="btn btn-primary" data-mdb-toggle="modal"
+  data-mdb-target="#exampleModal_iframe_2n_4" id='boton_Modal_iframe_2n_4'>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_iframe_2n_4" tabindex="-1" aria-labelledby="exampleModalLabel2"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header pt-4 pb-4" onclick="$('.modal').modal('hide');">
+        <button hidden id="cierramodal" type="button" class="btn btn-warning" data-mdb-dismiss="modal">
+          <i class="far fa-arrow-alt-circle fa-lg"></i>
+        </button>
+        <div class="fixed-action-btn">
+    <a class="btn btn-floating " onclick="document.getElementById('cierramodal').click();">
+        <i class="far fa-arrow-alt-circle-left text-danger fa-4x"></i>
+    </a>
+    <ul class="list-unstyled"><li></li>
+    </ul>
+</div>
+      </div>
+      <div class="modal-body">
+        <!-- <h1>Residencial</h1> -->
+        <!-- <img src="static/img/fv/solar-panels-g5050b05c9_1920.jpg" class="card-img-top" />
+        <p></p> -->
+
+        <iframe src="https://formulario-yzohicfcma-ew.a.run.app/contacto" id="frame" frameborder="0"
+          style="position:absolute; position:absolute; top:0; left:0; bottom:0; right:0; width: 100%; height: 100%;"></iframe>
+
+
+
+        <!-- <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="600px" /> -->
 
 
       </div>
@@ -940,10 +1202,10 @@
         </div>
     </main>
 
-    <script type="text/javascript" src="/static/js/mdb.min.js"></script>
-    <!-- Custom scripts -->
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 
 </html>
