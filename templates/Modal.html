@@ -17,20 +17,22 @@
         </button>
         {% include 'FixedButton.html' %}
       </div>
+
       <div class="modal-body">
         <!-- <h1>{{ v.headline1 }}</h1> -->
         <!-- <img src="{{v.img1}}" class="card-img-top" />
         <p>{{ v.content1 }}</p> -->
-        <a class="btn btn-success" href="#" role="button"  
-        onclick="document.getElementById('cierramodal').click();document.getElementById('boton_Modal_iframe_2{{v.n}}').click()">
-        Personalizar el estudio</a>
-
+        <center>
+          <a class="btn btn-success" href="#" role="button"
+            onclick="document.getElementById('cierramodal').click();document.getElementById('boton_Modal_iframe_2{{v.n}}').click()">
+            Personalizar el estudio</a>
+        </center>
         <object data='{{v.pdf}}' width="100%" height="1200px">
-          <p>joder!  Su navegador no soporta PDFs!</p>
-          <p><a href="{{v.pdf}}">Par verlo debe descargarlo</a></p>
-      </object>
-      <!-- <iframe src="{{v.pdf}}" id="frame" frameborder="0"
-          style="position:absolute; position:absolute; top:0; left:0; bottom:0; right:0; width: 100%; height: 100%;"></iframe> -->
+          <a class="btn btn-success" href="{{v.pdf}}" role="button">
+            DESCARGARLO, Su navegador no soporta PDFs! </a>
+        </object>
+        <h2>Ayuda</h2>
+        <iframe src="{{v.link2}}" id="frame" frameborder="0" style=" width: 100%; height: 100%;"></iframe>
 
       </div>
     </div>
