@@ -1,0 +1,32 @@
+<!-- Button trigger modal -->
+<button hidden type="button" class="btn btn-primary" data-mdb-toggle="modal"
+  data-mdb-target="#exampleModal_iframe_2_informacion" id='boton_Modal_iframe_2_informacion'>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_iframe_2_informacion" tabindex="-1" aria-labelledby="exampleModalLabel2"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header pt-4 pb-4" onclick="$('.modal').modal('hide');">
+        <button hidden id="cierramodal" type="button" class="btn btn-warning" data-mdb-dismiss="modal">
+          <i class="far fa-arrow-alt-circle fa-lg"></i>
+        </button>
+        {% include 'FixedButton.html' %}
+      </div>
+      <div class="modal-body">
+
+
+        <iframe src="https://autoconsumes.github.io/" id="frame" frameborder="0"
+          style="position:absolute; position:absolute; top:0; left:0; bottom:0; right:0; width: 100%; height: 100%;"></iframe>
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
