@@ -55,24 +55,24 @@
                 <ul class="navbar-nav  mb-2 mb-lg-0">
                     
 
-                    <li class="nav-item Comunidad Energetica">
-                        <a class="nav-link" href="#Comunidad Energetica" onclick="
+                    <li class="nav-item Comunidades">
+                        <a class="nav-link" href="#Comunidades" onclick="
                         document.getElementById('hamburgesa').click()">
-                            <strong class='text-success'>Comunidad Energetica</strong></a>
+                            <strong class='text-success'>Comunidades</strong></a>
                     </li>
                     
 
-                    <li class="nav-item Huerto Solar">
-                        <a class="nav-link" href="#Huerto Solar" onclick="
+                    <li class="nav-item Industrial">
+                        <a class="nav-link" href="#Industrial" onclick="
                         document.getElementById('hamburgesa').click()">
-                            <strong class='text-success'>Huerto Solar</strong></a>
+                            <strong class='text-success'>Industrial</strong></a>
                     </li>
                     
 
-                    <li class="nav-item Nave Industrial">
-                        <a class="nav-link" href="#Nave Industrial" onclick="
+                    <li class="nav-item PPA">
+                        <a class="nav-link" href="#PPA" onclick="
                         document.getElementById('hamburgesa').click()">
-                            <strong class='text-success'>Nave Industrial</strong></a>
+                            <strong class='text-success'>PPA</strong></a>
                     </li>
                     
 
@@ -336,7 +336,7 @@
 
             
 
-            <h1 id="Comunidad Energetica">Comunidad Energetica</h1>
+            <h1 id="Comunidades">Comunidades</h1>
 
               <section>
     <!-- <p class="subheader text-center mb-4 pb-2">Cards</p> -->
@@ -347,7 +347,7 @@
 
                 <a href="#!" class="link-dark" onclick="document.getElementById('boton_Modal_iframe_n_2').click();">
 
-                    <img src="https://mdbootstrap.com/img/Photos/new-templates/linkedin/img3.jpg" class="card-img-top"
+                    <img src="static/img/fv/pantallazos/residencial_portada.png"  class="card-img-top"
                         alt="..." />
                     <div class="card-body">
                         <span class="badge bg-primary mb-3">NEW</span>
@@ -369,7 +369,7 @@
 
                 <a href="#!" class="link-dark" onclick="document.getElementById('boton_Modal_iframe_n_5').click();">
 
-                    <img src="https://mdbootstrap.com/img/Photos/new-templates/linkedin/img3.jpg" class="card-img-top"
+                    <img src="static/img/fv/pantallazos/residencial_portada.png"  class="card-img-top"
                         alt="..." />
                     <div class="card-body">
                         <span class="badge bg-primary mb-3">NEW</span>
@@ -576,7 +576,136 @@
 
             
 
-            <h1 id="Huerto Solar">Huerto Solar</h1>
+            <h1 id="Industrial">Industrial</h1>
+
+              <section>
+    <!-- <p class="subheader text-center mb-4 pb-2">Cards</p> -->
+    <div class="row">
+        
+        <div class="col-md-6 col-lg-4 mb-5">
+            <div class="card">
+
+                <a href="#!" class="link-dark" onclick="document.getElementById('boton_Modal_iframe_n_1').click();">
+
+                    <img src="static/img/fv/pantallazos/residencial_portada.png"  class="card-img-top"
+                        alt="..." />
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-3">NEW</span>
+                        <h4 class="semibold mb-3">Nave Industrial</h4>
+                        <p class="mb-3">
+                            hoooolz  zfz ollz
+                        </p>
+                        <a href="#!" class="text-primary d-flex align-items-center" onclick="document.getElementById('boton_Modal_iframe_2n_1').click()">Call to action
+                            <i class="mi mi-ChevronRight ms-2"></i>
+                        </a>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+        
+    </div>
+</section>
+  
+<!-- Button trigger modal -->
+<button hidden type="button" class="btn btn-primary" data-mdb-toggle="modal"
+  data-mdb-target="#exampleModal_iframe_n_1" id='boton_Modal_iframe_n_1'>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_iframe_n_1" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header pt-4 pb-4" onclick="$('.modal').modal('hide');">
+        <button hidden id="cierramodal" type="button" class="btn btn-warning" data-mdb-dismiss="modal">
+          <i class="far fa-arrow-alt-circle fa-lg"></i>
+        </button>
+        <div class="fixed-action-btn">
+    <a class="btn btn-floating " onclick="document.getElementById('cierramodal').click();">
+        <i class="far fa-arrow-alt-circle-left text-success fa-4x"></i>
+    </a>
+    <ul class="list-unstyled"><li></li>
+    </ul>
+</div>
+      </div>
+
+      <div class="modal-body">
+        <!-- <h1>Nave Industrial</h1> -->
+        <!-- <img src="static/img/fv/pantallazos/curvas_kw.png" class="card-img-top" />
+        <p>hoooolz  zfz ollz</p> -->
+        <center>
+          <a class="btn btn-success" href="#" role="button"
+            onclick="document.getElementById('cierramodal').click();document.getElementById('boton_Modal_iframe_2n_1').click()">
+            Personalizar el estudio</a>
+        </center>
+        <object data='static/pdf/informe.pdf' width="100%" height="1200px">
+          <a class="btn btn-warning" href="static/pdf/informe.pdf" role="button">
+            Descargar el modelo
+            <img src="static/img/fv/pantallazos/curvas_kw.png" style=" width: 100%; height: 500;" /></a>
+        </object>
+        <h2>Ayuda</h2>
+        <iframe src="https://autoconsumes.github.io/AUDITORIA/Factura_Luz/" id="frame" frameborder="0" style=" width: 100%; height: 100%;"></iframe>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Button trigger modal -->
+<button hidden type="button" class="btn btn-primary" data-mdb-toggle="modal"
+  data-mdb-target="#exampleModal_iframe_2n_1" id='boton_Modal_iframe_2n_1'>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_iframe_2n_1" tabindex="-1" aria-labelledby="exampleModalLabel2"
+  aria-hidden="true">
+
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header pt-4 pb-4" onclick="$('.modal').modal('hide');">
+        <button hidden id="cierramodal" type="button" class="btn btn-warning" data-mdb-dismiss="modal">
+          <i class="far fa-arrow-alt-circle fa-lg"></i>
+        </button>
+        <div class="fixed-action-btn">
+    <a class="btn btn-floating " onclick="document.getElementById('cierramodal').click();">
+        <i class="far fa-arrow-alt-circle-left text-success fa-4x"></i>
+    </a>
+    <ul class="list-unstyled"><li></li>
+    </ul>
+</div>
+      </div>
+      <div class="modal-body">
+        <!-- <h1>Nave Industrial</h1> -->
+        <!-- <img src="static/img/fv/energy-1322816_1920.jpg" class="card-img-top" />
+        <p>hoooolz  zfz ollz</p> -->
+
+        <iframe src="https://formulario-yzohicfcma-ew.a.run.app/industrial" id="frame" frameborder="0"
+          style="position:absolute; position:absolute; top:0; left:0; bottom:0; right:0; width: 100%; height: 100%;"></iframe>
+
+
+
+        <!-- <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="600px" /> -->
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+            
+
+            
+
+            
+
+            <h1 id="PPA">PPA</h1>
 
               <section>
     <!-- <p class="subheader text-center mb-4 pb-2">Cards</p> -->
@@ -587,7 +716,7 @@
 
                 <a href="#!" class="link-dark" onclick="document.getElementById('boton_Modal_iframe_n_3').click();">
 
-                    <img src="https://mdbootstrap.com/img/Photos/new-templates/linkedin/img3.jpg" class="card-img-top"
+                    <img src="static/img/fv/pantallazos/residencial_portada.png"  class="card-img-top"
                         alt="..." />
                     <div class="card-body">
                         <span class="badge bg-primary mb-3">NEW</span>
@@ -705,135 +834,6 @@
 
             
 
-            <h1 id="Nave Industrial">Nave Industrial</h1>
-
-              <section>
-    <!-- <p class="subheader text-center mb-4 pb-2">Cards</p> -->
-    <div class="row">
-        
-        <div class="col-md-6 col-lg-4 mb-5">
-            <div class="card">
-
-                <a href="#!" class="link-dark" onclick="document.getElementById('boton_Modal_iframe_n_1').click();">
-
-                    <img src="https://mdbootstrap.com/img/Photos/new-templates/linkedin/img3.jpg" class="card-img-top"
-                        alt="..." />
-                    <div class="card-body">
-                        <span class="badge bg-primary mb-3">NEW</span>
-                        <h4 class="semibold mb-3">Nave Industrial</h4>
-                        <p class="mb-3">
-                            hoooolz  zfz ollz
-                        </p>
-                        <a href="#!" class="text-primary d-flex align-items-center" onclick="document.getElementById('boton_Modal_iframe_2n_1').click()">Call to action
-                            <i class="mi mi-ChevronRight ms-2"></i>
-                        </a>
-                    </div>
-                </a>
-
-            </div>
-        </div>
-        
-    </div>
-</section>
-  
-<!-- Button trigger modal -->
-<button hidden type="button" class="btn btn-primary" data-mdb-toggle="modal"
-  data-mdb-target="#exampleModal_iframe_n_1" id='boton_Modal_iframe_n_1'>
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal_iframe_n_1" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header pt-4 pb-4" onclick="$('.modal').modal('hide');">
-        <button hidden id="cierramodal" type="button" class="btn btn-warning" data-mdb-dismiss="modal">
-          <i class="far fa-arrow-alt-circle fa-lg"></i>
-        </button>
-        <div class="fixed-action-btn">
-    <a class="btn btn-floating " onclick="document.getElementById('cierramodal').click();">
-        <i class="far fa-arrow-alt-circle-left text-success fa-4x"></i>
-    </a>
-    <ul class="list-unstyled"><li></li>
-    </ul>
-</div>
-      </div>
-
-      <div class="modal-body">
-        <!-- <h1>Nave Industrial</h1> -->
-        <!-- <img src="static/img/fv/pantallazos/curvas_kw.png" class="card-img-top" />
-        <p>hoooolz  zfz ollz</p> -->
-        <center>
-          <a class="btn btn-success" href="#" role="button"
-            onclick="document.getElementById('cierramodal').click();document.getElementById('boton_Modal_iframe_2n_1').click()">
-            Personalizar el estudio</a>
-        </center>
-        <object data='static/pdf/informe.pdf' width="100%" height="1200px">
-          <a class="btn btn-warning" href="static/pdf/informe.pdf" role="button">
-            Descargar el modelo
-            <img src="static/img/fv/pantallazos/curvas_kw.png" style=" width: 100%; height: 500;" /></a>
-        </object>
-        <h2>Ayuda</h2>
-        <iframe src="https://autoconsumes.github.io/AUDITORIA/Factura_Luz/" id="frame" frameborder="0" style=" width: 100%; height: 100%;"></iframe>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-<!-- Button trigger modal -->
-<button hidden type="button" class="btn btn-primary" data-mdb-toggle="modal"
-  data-mdb-target="#exampleModal_iframe_2n_1" id='boton_Modal_iframe_2n_1'>
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal_iframe_2n_1" tabindex="-1" aria-labelledby="exampleModalLabel2"
-  aria-hidden="true">
-
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header pt-4 pb-4" onclick="$('.modal').modal('hide');">
-        <button hidden id="cierramodal" type="button" class="btn btn-warning" data-mdb-dismiss="modal">
-          <i class="far fa-arrow-alt-circle fa-lg"></i>
-        </button>
-        <div class="fixed-action-btn">
-    <a class="btn btn-floating " onclick="document.getElementById('cierramodal').click();">
-        <i class="far fa-arrow-alt-circle-left text-success fa-4x"></i>
-    </a>
-    <ul class="list-unstyled"><li></li>
-    </ul>
-</div>
-      </div>
-      <div class="modal-body">
-        <!-- <h1>Nave Industrial</h1> -->
-        <!-- <img src="static/img/fv/energy-1322816_1920.jpg" class="card-img-top" />
-        <p>hoooolz  zfz ollz</p> -->
-
-        <iframe src="https://formulario-yzohicfcma-ew.a.run.app/contacto" id="frame" frameborder="0"
-          style="position:absolute; position:absolute; top:0; left:0; bottom:0; right:0; width: 100%; height: 100%;"></iframe>
-
-
-
-        <!-- <embed src="static/pdf/informe.pdf" type="application/pdf" width="100%" height="600px" /> -->
-
-
-      </div>
-    </div>
-  </div>
-</div>
-
-            
-
-            
-
-            
-
             <h1 id="Residencial">Residencial</h1>
 
               <section>
@@ -845,7 +845,7 @@
 
                 <a href="#!" class="link-dark" onclick="document.getElementById('boton_Modal_iframe_n_0').click();">
 
-                    <img src="https://mdbootstrap.com/img/Photos/new-templates/linkedin/img3.jpg" class="card-img-top"
+                    <img src=" static/img/fv/pantallazos/residencial_portada.png"  class="card-img-top"
                         alt="..." />
                     <div class="card-body">
                         <span class="badge bg-primary mb-3">NEW</span>
@@ -867,7 +867,7 @@
 
                 <a href="#!" class="link-dark" onclick="document.getElementById('boton_Modal_iframe_n_4').click();">
 
-                    <img src="https://mdbootstrap.com/img/Photos/new-templates/linkedin/img3.jpg" class="card-img-top"
+                    <img src="static/img/fv/pantallazos/residencial_portada.png"  class="card-img-top"
                         alt="..." />
                     <div class="card-body">
                         <span class="badge bg-primary mb-3">NEW</span>
