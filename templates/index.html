@@ -50,13 +50,12 @@
 
             {% if seccion=='importante' %} {{ Cards(items) }} {{ Modal(items) }}
             <!--   -->
-            {% elif seccion=='fdsfad' %} {{ CardsXL(items) }} {{ Modal(items) }}
-            {% elif seccion=='Smart' %} {{ Cards(items) }} {{ Modal(items) }}
-            {% elif seccion=='Individual' %} {{ Featurette(items) }} {{ Modal(items) }}
-            {% elif seccion=='Servicios' %} {{ Marketing(items) }} {{ Modal(items) }}
+            {% elif seccion=='Comunidades' %} {{ CardsXL(items) }} {{ Modal(items) }}
+            {% elif seccion=='Residencial' %} {{ Featurette(items) }} {{ Modal(items) }}
+            {% elif seccion=='Huertos Solares' %} {{ CardsXL(items) }} {{ Modal(items) }}
             {% elif seccion=='_Contacto' %} {{ Contact(items) }} {{ Modal(items) }}
             <!--  -->
-            {% else %} {{ Cards(items) }} {{ Modal(items) }}
+            {% else %} {{ Featurette(items) }} {{ Modal(items) }}
             {% endif %}
 
             {% endfor %}
